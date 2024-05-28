@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Quiz App</title>
+</head>
+
+<body>
+    <div class="main result">
+        <h1>Quiz Result</h1>
+
+        <p><span id="user_name"></span> your result is: </p>
+        <p>Total time Taken: <span id="user_time"></span></p>
+        <p>Total Questions: <span id="totalQuestion">10</span></p>
+        <p>Attempt: <span id="attempt">10</span></p>
+        <p>Correct: <span id="correct"></span></p>
+        <p>Wrong: <span id="wrong">0</span></p>
+        <p>Percentage: <span id="percent">0.0</span>%</p>
+
+        <div class="restart">
+            <a href="./index.html" target="_self">Start Again</a>
+            <a href="javascript:history.back()">Go back</a>
+        </div>
+    </div>
+
+    <!-- user information -->
+    <script src="./userInfo.js"></script>
+    <script src="./timer.js"></script>
+    
+</body>
+
+</html>

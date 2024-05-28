@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Styling for the main container element */
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    margin: 10vh auto;
+    height: 80vh;
+    width: 80vw;
+    line-height: 2;
+    text-align: center;
+}
+
+/* --------------page 1--------- */
+
+h1 {
+    color: aqua;
+}
+
+h4 {
+    border-bottom: 1px solid gray;
+}
+
+/* Styling for the name input field */
+#name {
+    padding: 0.5rem;
+    font-weight: bold;
+    border-radius: 5px;
+    width: 30vw;
+}
+
+/* Styling for the ENTER button */
+#enter {
+    padding: 0.5rem;
+    background-color: aqua;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: auto;
+}
+
+/* Style for the all buttons */
+button {
+    padding: 0.7%;
+    background-color: #c1f6ffe1;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid aqua;
+    width: 20vw;
+}
+
+/* Style for the all anchor tag */
+a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    border: 2px solid aqua;
+    border-radius: 5px;
+    padding: .5rem;
+    margin: 0 .5rem;
+}
+
+a:hover {
+    background-color: aqua;
+    color: #fff;
+    transition: 0.6s;
+}
+
+/* ------------page1 css ends--------------- */
+
+/* ------------(option page / links) css ends--------------- */
+
+.timeQnoScore {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    font-weight: bold;
+}
+
+#time,
+#questionNo {
+    border: 2px solid #0ad0f4;
+    border-radius: 50%;
+    padding: 1%;
+    margin: 1% 0;
+}
+
+#question {
+    border: 3px solid gray;
+    border-radius: 5px;
+    padding: 2.5%;
+    width: 75%;
+    margin: 1% auto;
+
+}
+/* Style for answer options in an unordered list */
+.ans ul {
+    display: flex;
+}
+
+/* providing style to option botton/ link of the page */
+#optA,
+#optB,
+#optC,
+#optD,
+#next {
+    margin: 1%;
+    padding: 0.75%;
+    border: 2px solid aqua;
+    border-radius: 25px;
+    background-color: #fff;
+    list-style: none;
+    width: 20vw;
+    cursor: pointer;
+}
+
+#next:hover {
+    transition: 0.6s;
+    background-color: aqua;
+    color: #fff;
+}
+/* alligining question center */
+#questions {
+    text-align: center;
+}
+
+/* Active state style for selected answer options and also provided "imortant"*/
+.active {
+    background-color: aqua !important;
+    color: #fff;
+}
+
+/* ------------(option page / links) css ends--------------- */
+/* ********************result page********* */
+#user_name,
+#user_time,
+#totalQuestion,
+#attempt,
+#correct,
+#wrong,
+#percent {
+    font-weight: bold;
+}

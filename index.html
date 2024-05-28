@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Major</title>
+</head>
+
+<body>
+    <div class="main">
+        <img src="./testbook.png" alt="logo" width="10%">
+        <h1>Hello User !</h1>
+        <h2>Enter your name To continue the Quiz.</h2>
+        <form id="detail" onsubmit="submitForm(event)">
+            <input type="text" name="name" id="name" placeholder="ENTER YOUR NAME">
+            <input type="submit" value="ENTER" id="enter">
+        </form>
+        <h4>You'll have 10 seconds to answer each question</h4>
+
+        <h1>Select Category</h1>
+
+        <div>
+            <!-- adding onclick events on a href link on option by making it like button -->
+            <a href="./computer.html" target="_self" id="computer" onclick="return checkName()">Computer</a>
+            <a href="./math.html" target="_self" id="math" onclick="return checkName()">Math</a>
+            <a href="./science.html" target="_self" id="science" onclick="return checkName()">Science</a>
+            <a href="./gk.html" target="_self" id="gk" onclick="return checkName()">G . K .</a>
+        </div>
+    </div>
+    <script src="./computer.js"></script>
+    <script src="./math.js"></script>
+    <script src="./science.js"></script>
+    <script src="./gk.js"></script>
+
+    <script>
+        // JavaScript functions
+
+        function submitForm(event) {
+            event.preventDefault();
+
+            let name = document.getElementById("name").value;
+
+            if (name.trim() === "") {
+                // Check if the name input is empty and display an alert
+                alert("Name cannot be empty. Please enter your name.");
+            } else {
+                // If the name is not empty, store it in sessionStorage
+                sessionStorage.setItem("name", name);
+            }
+        }
+
+        function checkName() {
+            let name = document.getElementById("name").value;
+
+            if (name.trim() === "") {
+                // If the name is empty, show an alert and prevent the anchor tag from opening
+                alert("Name cannot be empty. Please enter your name.");
+                return false;
+            }
+
+            // If the name is not empty, allow the anchor tag to open
+            return true;
+        }
+    </script>
+
+</body>
+
+</html>
